@@ -194,7 +194,7 @@ Resources:
         AutoScaling: 'false'
         HealthCheckGracePeriodSeconds: '60'
         Spot: !Ref Spot
-        CpuArchitecture: 'X86_64'
+        CpuArchitecture: 'ARM64'
         OperatingSystemFamily: 'LINUX'
         ExecuteCommand: true
       TemplateURL: './node_modules/@cfn-modules/fargate-service/module.yml'
@@ -254,7 +254,7 @@ Resources:
         AppEnvironment20Key: 'S3_REGION'
         AppEnvironment20Value: !Ref 'AWS::Region'
         Cpu: '0.25'
-        Memory: '0.5'
+        Memory: '1'
         DesiredCount: '1'
         MaxCapacity: '1'
         MinCapacity: '1'
@@ -263,7 +263,7 @@ Resources:
         AutoScaling: 'false'
         HealthCheckGracePeriodSeconds: '60'
         Spot: !Ref Spot
-        CpuArchitecture: 'X86_64'
+        CpuArchitecture: 'ARM64'
         OperatingSystemFamily: 'LINUX'
         ExecuteCommand: true
       TemplateURL: './node_modules/@cfn-modules/fargate-service/module.yml'
@@ -330,7 +330,7 @@ Resources:
         AutoScaling: 'false'
         HealthCheckGracePeriodSeconds: '60'
         Spot: !Ref Spot
-        CpuArchitecture: 'X86_64'
+        CpuArchitecture: 'ARM64'
         OperatingSystemFamily: 'LINUX'
         ExecuteCommand: true
       TemplateURL: './node_modules/@cfn-modules/fargate-service/module.yml'
